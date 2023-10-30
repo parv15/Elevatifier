@@ -1,0 +1,37 @@
+.search-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+  .search-filter label {
+    margin: 1rem;
+  }
+  
+  .search-filter input {
+    width: 15rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  .search{
+    position: sticky;
+    right: 4rem;
+ 
+  }
+ 
+  @media (max-width:1024px){
+    .search-filter{
+      display: none;
+    }
+    .sideBar .search-filter{
+      display: block;
+    }
+    .search{
+        top: -1.75rem;
+        right: -6rem;
+        position: relative;
+    }
+  }
+  

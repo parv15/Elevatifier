@@ -1,0 +1,47 @@
+.category-filter {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+}
+
+.category-filter label {
+  margin-right: 10px;
+}
+
+.category-filter input {
+  margin-right: 5px;
+}
+
+.category {
+    margin: 0.5rem;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.active {
+  border: none;
+  padding: 10px;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #2351A3;
+  border-bottom: 5px solid #2351A3;
+}
+
+@media (max-width: 1024px) {
+  
+ .category-filter{
+    display: none;
+ }
+ .sideBar .category-filter{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+ }
+}
