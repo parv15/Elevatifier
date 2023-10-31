@@ -19,7 +19,7 @@ function NewsList({ newsData, selectedCategory, searchQuery }) {
   return (
     <div className="news-list">
       {slicedData?.map((article, index) => (
-        <NewsArticle key={index} article={article.attributes} />
+        <NewsArticle key={index} article={article} />
       ))}
       {articlePage < filteredNews.length && (
         <button className="load-more" onClick={loadMore}>Load More</button>

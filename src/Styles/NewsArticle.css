@@ -11,6 +11,7 @@
     align-items: center;
     text-align: center;
     width: 75%;
+    border-radius: 10px;
   }
   
   .news-article h2 {

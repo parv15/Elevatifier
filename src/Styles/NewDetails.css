@@ -1,0 +1,13 @@
+.news-detail{
+    margin-top: 5rem;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+.news-detail img {
+    max-width: 100%;
+    max-height: 20rem; 
+    object-fit: cover;
+    margin: 10px 0;
+}
+  

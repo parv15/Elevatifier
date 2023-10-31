@@ -1,13 +1,14 @@
 import "../Styles/NewsArticle.css";
+import { Link } from "react-router-dom";
 
 function NewsArticle({ article }) {
   return (
     <div className="news-article">
       <div className="image-container">
-        <img src={article.newsIcon} alt="News Icon" />
+        <img src={article.attributes.newsIcon} alt="News Icon" />
       </div>
       <div className="article-info">
-        <h2>{article.headline}</h2>
+        <h2>{article.attributes.headline}</h2>
         <p className="articleContent">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -16,9 +17,10 @@ function NewsArticle({ article }) {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
         </p>
-        <button className="read-more" target="_blank">Read More</button>
-        <p>Source:&nbsp;{article.newsSource}</p>
-        <p>{article.hashtags}</p>
+        <Link to={`/news/${article.id}`} target="_blank">Read More</Link>
+        <p>Source:&nbsp;{article.attributes.newsSource}</p>
+        <p>{article.attributes.hashtags}</p>
+
       </div>
     </div>
   );
